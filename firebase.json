@@ -3,11 +3,7 @@
     {
       "target": "ncounterhub",
       "public": "dist/ncounterhub",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
           "source": "**",

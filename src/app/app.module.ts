@@ -10,11 +10,8 @@ import { AppComponent } from './app.component';
 
 import { environment } from 'src/environments/environment';
 
-
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -25,4 +22,4 @@ import { environment } from 'src/environments/environment';
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
