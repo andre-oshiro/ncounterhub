@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ncounterhub": {
+      "hosting": {
+        "ncounterhub": [
+          "ncounterhub"
+        ]
+      }
+    }
+  }
+}

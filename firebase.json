@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "ncounterhub",
+      "public": "dist/ncounterhub",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
