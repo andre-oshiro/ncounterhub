@@ -1,0 +1,63 @@
+.view {
+  display: flex;
+  flex-flow: row wrap;
+
+  height: 100%;
+  width: 100%;
+}
+
+.rooms {
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 25%;
+  height: 100%;
+
+  background-color: hsl(215, 50%, 70%);
+
+  overflow: scroll;
+
+  z-index: 2;
+}
+
+.room {
+  display: flex;
+  flex-flow: column nowrap;
+
+  width: 75%;
+  height: 85%;
+
+  background-color: hsl(215, 40%, 60%);
+
+  overflow: scroll;
+
+  z-index: 1;
+}
+
+.msg-input {
+  position: absolute;
+  bottom: 0;
+
+  height: 15%;
+  width: 75%;
+}
+
+@media screen and (max-height: 420px) {
+  .room {
+    height: 72%;
+  }
+
+  .msg-input {
+    height: 28%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .room {
+    display: none;
+  }
+
+  .rooms {
+    width: 100%;
+  }
+}

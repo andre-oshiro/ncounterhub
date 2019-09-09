@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-flow: row wrap;
+
+  width: 100%;
+
+  padding: 10px;
+
+  cursor: pointer;
+
+  .content {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    align-items: center;
+
+    padding: 10px 10px 10px 8px;
+
+    border-radius: 6px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: hsl(225, 95%, 99%);
+    .image {
+      margin: 0 15px 0 0;
+      &__img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+    .separator {
+      height: 80%;
+      border: none;
+      margin: 0 15px 0 0;
+      border-right: 1px solid hsl(0, 0%, 85%);
+    }
+    .info {
+      padding: 0;
+      font-size: 0.8em;
+      &__name {
+        font-weight: bold;
+        word-break: break-all;
+      }
+    }
+  }
+}

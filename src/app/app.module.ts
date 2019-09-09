@@ -9,9 +9,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { environment } from 'src/environments/environment';
+import { DefaultComponent } from './layouts/containers/default/default.component';
+import { NaviComponent } from './layouts/components/navi/navi.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DefaultComponent, NaviComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

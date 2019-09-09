@@ -1,0 +1,48 @@
+<form [formGroup]="formGroup" autocomplete="off" class="form">
+  <div class="input">
+    <app-input
+      formControlName="firstName"
+      [placeholder]="'First name'"
+      [type]="'text'"
+      [name]="'firstName'"
+      [label]="'First name'"
+    >
+    </app-input>
+  </div>
+
+  <div class="input">
+    <app-input
+      class="inpt"
+      formControlName="lastName"
+      [placeholder]="'Last Name'"
+      [type]="'text'"
+      [name]="'lastName'"
+      [label]="'Last Name'"
+    >
+    </app-input>
+  </div>
+
+  <div class="input">
+    <app-input
+      class="inpt"
+      formControlName="email"
+      [placeholder]="'Email'"
+      [type]="'Email'"
+      [name]="'email'"
+      [label]="'Email'"
+    >
+    </app-input>
+  </div>
+
+  <div class="input">
+    <app-input
+      class="inpt"
+      formControlName="password"
+      [placeholder]="'Password'"
+      [type]="'text'"
+      [name]="'password'"
+      [label]="'Password'"
+    >
+    </app-input>
+  </div>
+</form>

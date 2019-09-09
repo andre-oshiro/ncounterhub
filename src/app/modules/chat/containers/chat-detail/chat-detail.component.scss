@@ -1,0 +1,35 @@
+.view {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+
+  background-color: hsl(215, 40%, 60%);
+
+  .room {
+    height: 85%;
+    width: 100%;
+
+    overflow: scroll;
+  }
+
+  .msg-input {
+    position: absolute;
+    bottom: 0;
+
+    height: 15%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  .view {
+    .room {
+      height: 70%;
+    }
+
+    .msg-input {
+      height: 30%;
+    }
+  }
+}

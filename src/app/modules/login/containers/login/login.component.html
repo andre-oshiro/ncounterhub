@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="header"></div>
+  <div class="body">
+    <div class="body__form">
+      <app-login-form></app-login-form>
+    </div>
+    <div class="body__button">
+      <app-button [label]="'Login'" [backgroundColor]="'#d8d8d8'" [disabled]="false"> </app-button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer__text-block">
+      <p>~ or login with SNS ~</p>
+    </div>
+    <ng-container *ngFor="let sns of socialNetworkServices">
+      <div class="footer__button">
+        <app-button
+          [label]="sns.label"
+          [backgroundColor]="sns.backgroundColor"
+          [labelColor]="sns.labelColor"
+          [disabled]="false"
+        >
+        </app-button>
+      </div>
+    </ng-container>
+  </div>
+</div>

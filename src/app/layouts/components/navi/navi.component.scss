@@ -1,0 +1,46 @@
+nav {
+  height: 100%;
+  padding: 30px 0 0 0;
+
+  background-color: hsl(225, 25%, 18%);
+
+  .content {
+    .links {
+      height: 100%;
+      list-style: none;
+
+      .link {
+        margin: 0 auto;
+        padding: 0 0 40px 0;
+
+        text-align: center;
+        &__def {
+          font-size: 0.5em;
+          filter: drop-shadow(0 0 1px hsla(0, 0%, 100%, 0.1));
+        }
+        &__anchor {
+          text-decoration: none;
+          color: hsl(225, 25%, 2%);
+          filter: drop-shadow(0 0 1px hsla(0, 0%, 100%, 0.1));
+        }
+        &__anchor:hover {
+          color: hsl(215, 40%, 60%);
+        }
+        &__anchor:active {
+          color: hsl(215, 71%, 66%);
+        }
+      }
+      .link:nth-last-child(1) {
+        padding: 0;
+      }
+    }
+  }
+  .bottom-content {
+    position: sticky;
+    bottom: 30px;
+  }
+}
+
+.icon {
+  font-size: 2.2em;
+}

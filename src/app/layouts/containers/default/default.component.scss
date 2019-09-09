@@ -1,0 +1,74 @@
+main {
+  float: left;
+  clear: none;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+app-navi {
+  float: left;
+  clear: right;
+
+  width: 6%;
+  height: 100%;
+
+  position: relative;
+  z-index: 2;
+
+  box-shadow: -2px 0 10px 0 hsl(0, 0%, 0%);
+}
+
+section {
+  float: left;
+  clear: right;
+
+  width: 94%;
+  height: 100%;
+
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+  app-navi {
+    width: 9%;
+  }
+
+  section {
+    width: 91%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  app-navi {
+    width: 11%;
+  }
+
+  section {
+    width: 89%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  app-navi {
+    width: 12%;
+  }
+
+  section {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  app-navi {
+    display: none;
+  }
+
+  section {
+    width: 100%;
+    height: 100%;
+  }
+}
