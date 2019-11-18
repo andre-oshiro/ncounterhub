@@ -114,5 +114,8 @@
       }
     }
   },
-  "defaultProject": "ncounterhub"
+  "defaultProject": "ncounterhub",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }
